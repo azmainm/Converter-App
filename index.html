@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta  http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Azmain's Converter</title>
+  </head>
+  <body>
+      <header>
+          <h1 style="color: white; text-align: center;font-weight: 700;">Azmain's Converter</h1>
+        </header>
+    <div class="container">
+        <!--Header for weight converter-->
+        <h1 class="display-4 text-center"style="margin-bottom:30px;">Weight Converter</h1>
+        <div class="row">
+            <!--kg converter-->
+            <div class="col-md-6 col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <input id="kgInput" type="number" class="form-control form-control-lg"placeholder="Enter Kilograms">
+                    </div>
+                </form>
+                <div id="kgoutput">
+                    <div class="card bg-warning">
+                        <div class="card-body">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <div class="card-body">
+                            <h4>Pounds:</h4>
+                            <div id="lbsOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-danger">
+                        <div class="card-body">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--lbs converter-->
+            <div class="col-md-6 col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg"placeholder="Enter Pounds">
+                    </div>
+                </form>
+                <div id="lbsoutput">
+                    <div class="card bg-warning">
+                        <div class="card-body">
+                            <h4>Grams:</h4>
+                            <div id="gramOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <div class="card-body">
+                            <h4>kilograms:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-danger">
+                        <div class="card-body">
+                            <h4>Ounces:</h4>
+                            <div id="ounOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!--Header for height converter-->
+    <h1 class="display-4 text-center"style="margin-bottom:30px;">Height Converter</h1>
+    <div class="row">
+        <!--metre converter-->
+        <div class="col-md-6 col-lg-6">
+            <form>
+                <div class="form-group">
+                    <input id="mInput" type="number" class="form-control form-control-lg"placeholder="Enter metres">
+                </div>
+            </form>
+            <div id="moutput">
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <h4>Centimetres:</h4>
+                        <div id="cmOutput"></div>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h4>Inches:</h4>
+                        <div id="iOutput"></div>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h4>Millimeter:</h4>
+                        <div id="mmOutput"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--inch converter-->
+        <div class="col-md-6 col-lg-6">
+            <form>
+                <div class="form-group">
+                    <input id="inInput" type="number" class="form-control form-control-lg"placeholder="Enter Inches">
+                </div>
+            </form>
+            <div id="inoutput">
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <h4>Feet:</h4>
+                        <div id="ftOutput"></div>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h4>Metres:</h4>
+                        <div id="meOutput"></div>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h4>Centimeters:</h4>
+                        <div id="cenOutput"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Header for Steps converter-->
+    <h1 class="display-4 text-center"style="margin-bottom:30px;">Steps Converter</h1>
+    <div class="row">
+        <!--steps converter-->
+        <div class="col-md-12 col-lg-12">
+            <form>
+                <div class="form-group">
+                    <input id="sInput" type="number" class="form-control form-control-lg"placeholder="Enter Steps">
+                </div>
+            </form>
+            <div id="soutput">
+                <div class="card bg-warning">
+                    <div class="card-body">
+                        <h4>Kilometres:</h4>
+                        <div id="kmOutput"></div>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">
+                        <h4>Metres:</h4>
+                        <div id="metOutput"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="background-color: lightblue;margin-top: 60px;padding: 40px;">
+    <h4 style="color: white;text-align: left;">© AzmainMorshed 2020</h4>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
